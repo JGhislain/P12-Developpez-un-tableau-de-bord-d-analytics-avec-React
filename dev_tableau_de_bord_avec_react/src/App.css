@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.chart-number {
+  font-weight: bold;
+  font-size: 26px;
+  fill: #3a3a3a;
+}
+
+.chart-label {
+  font-size: 16px;
+  fill: #74798C;
+}
+.topbar {
+  display: flex;
+  background-color: #020203;
+  height: 90px;
+  position: relative;
+  z-index: 10;
+}
+.logo-title {
+  margin: 18px 28px;
+  width: 178px;
+  height: auto;
+  object-fit: contain;
+}
+.top-nav-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: 500;
+}
+.nav-link {
+  color: #FFF;
+  text-decoration: none;
+}
+.nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100vh;
+  position: fixed;
+  background: #020203;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  text-align: center;
+}
+.sidebar-link {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+.side-copyright {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  rotate: 270deg;
+  width: 110%;
+  position: relative;
+  top: 20%;
+}
+.user-profil-contain {
+  margin: 4% 14%;
+}
+.user-details {
+  text-align: left;
+  margin-bottom: 7vh;
+}
+.hello-text {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  margin-top: 4.8vh;
+}
+.user-name {
+  color: #E60000;
+}
+.congratulation-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+.main-tool {
+  display: flex;
+  flex-direction: row;
+  margin: 4% 5% 4% 14%;
+}
+.main-graph {
+  width: 100%;
+  min-width: 600px;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6%;
+}
+.recharts-activity-daily {
+  width: 88%;
+  height: 300px !important;
+  padding: 30px 0 30px 20px;
+}
+.barchart-activity-daily {
+  padding: 0 30px;
+}
+.daily-activity-chart {
+  background-color: #FBFBFB;
+}
+.daily-chart-title {
+  color: #20253A;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.chart-legend {
+  display: flex;
+  align-items: center;
+}
+.legend-weight {
+  padding-right: 35px;
+  display: flex;
+  align-items: center;
+}
+.legend-color-weight {
+  background-color: #282D30;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.legend-cal {
+  display: flex;
+  align-items: center;
+}
+.legend-color-cal {
+  background-color: #E60000;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.text-legend {
+  color: #9B9EAC;
+}
+.litle-graph {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.average-session-chart-wrapper {
+  background: #FF0000;
+  width: 17.10vw;
+  max-width: 300px;
+  min-width: 220px;
+  height: 28vh;
+  border-radius: 5px;
+}
+.average-tooltip {
+  fill: black;
+  fill-opacity: 0.0975;
+}
+.average-session-title {
+  color: #ff8080;
+  text-align: left;
+  padding-left: 35px;
+  font-size: 15px;
+  width: 140px;
+  margin: 0;
+  padding-top: 20px;
+  position: relative;
+  top: 8px;
+}
+.performance-chart-bloc {
+  border-radius: 5px;
+  background: #282D30;
+  width: 17.10vw;
+  max-width: 300px;
+  min-width: 220px;
+  height: 28vh;
+}
+.score-pie-container {
+  height: 28vh;
+  border-radius: 5px;
+  width: 17.10vw;
+  max-width: 300px;
+  min-width: 220px;
+  background: #FBFBFB;
+}
+.score-pie-title {
+  margin: 0;
+  text-align: left;
+  position: relative;
+  top: 25px;
+  left: 30px;
+  font-size: 14px;
+  width: 40px;
+  float: left;
+}
+.key-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 689px;
+  width: 100%;
+  margin-left: 30px;
+}
+.key-data-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #FBFBFB;
+  width: 100%;
+  height: 124px;
+  padding: 10px 10px;
+}
+.img-data-key {
+  width: 3.42vw;
+  max-width: 60px;
+}
+.text-contain {
+  padding-right: 10%;
+  text-align: left;
+}
+.val-data-key {
+  margin-bottom: 0;
+  font-size: 1.14vw;
+  font-weight: 700;
+}
+.text-data-key {
+  margin-top: 0;
+  font-size: 14px;
+}
+.switch-id-button {
+  position: absolute;
+  right: 50px;
+  top: 140px;
+}
+.switch-source-button {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+}
+.toogle-button {
+  padding: 5px;
+  background: #FF0000;
+  color: #FBFBFB;
+  border: outset 3px #282D30;
+  border-radius: 5px;
+  transition: all 0.5s ease-in;
+}
+.toogle-button:hover {
+  background: #FBFBFB;
+  border: inset 2px #E60000;
+  color: #282D30;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  html {
+    height: 728px;
+  }
+  .topbar {
+    height: 60px;
+}
+.logo-title {
+  margin: 10px 25px;
+}
+.top-nav-link {
+  font-size: 18px;
+}
+.sidebar {
+  width: 100px;
+}
+.side-copyright {
+  top: 15%;
+}
+  .user-profil-contain {
+    margin: 2% 14%;
+  }
+  .hello-text {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: 1.8vh;
+  }
+  .congratulation-text {
+    font-size: 16px;
+}
+.user-details {
+    text-align: left;
+    margin-bottom: 3vh;
+  }
+  .main-tool {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5% 4% 14%;
+}
+  .recharts-activity-daily {
+    height: 220px !important;
+    padding: 15px 0 15px 20px
+}
+  .daily-chart-title {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.chart-legend {
+  font-size: 14px;
+}
+.barchart-activity-daily {
+    padding: 0 20px;
+  }
+  .litle-graph {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.chart-number {
+  font-size: 20px;
+}
+.chart-label {
+  font-size: 12px;
+}
+.key-data-item {
+  height: 8.4vh;
+}
+.key-data-container {
+  height: 515px;
+}
+}
